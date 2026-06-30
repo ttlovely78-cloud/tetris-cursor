@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테트리스</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-container">
+      <h1 class="game-title">테트리스</h1>
+
+      <div class="game-layout">
+        <section class="board-section" aria-label="게임 보드">
+          <div id="game-board" class="game-board"></div>
+        </section>
+
+        <aside class="sidebar">
+          <section class="panel score-panel">
+            <h2 class="panel-title">점수</h2>
+            <p id="score" class="score-value">0</p>
+          </section>
+
+          <section class="panel status-panel">
+            <h2 class="panel-title">상태</h2>
+            <p id="game-status" class="game-status">대기 중</p>
+          </section>
+
+          <section class="panel controls-panel">
+            <button id="start-btn" type="button" class="btn btn-primary">
+              시작
+            </button>
+            <button id="restart-btn" type="button" class="btn btn-secondary">
+              재시작
+            </button>
+          </section>
+
+          <section class="panel help-panel">
+            <h2 class="panel-title">조작법</h2>
+            <ul class="help-list">
+              <li><kbd>←</kbd> 왼쪽 이동</li>
+              <li><kbd>→</kbd> 오른쪽 이동</li>
+              <li><kbd>↓</kbd> 한 칸 빠르게 내리기</li>
+              <li><kbd>↑</kbd> 블록 회전</li>
+              <li><kbd>Space</kbd> 바닥까지 즉시 낙하</li>
+            </ul>
+            <p class="help-note">시작 버튼을 누른 뒤 조작할 수 있습니다.</p>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
